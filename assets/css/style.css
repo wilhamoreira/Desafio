@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor1: #084154;
+    --cor2: #3EC6E0;
+    --cor3: #EBEBEB;
+    --cor4: #FFFFFF;
+
+}
+
+body{
+    
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;   
+    
+}
+header{
+    
+    background-image: url("../img/principal.png");
+    height: 80vh;
+    /* Define o tamanho e posicionamento da imagem */
+    background-size: cover;
+    background-position: center;
+}
+
+nav{
+    position: relative;
+    max-width: 74.12em;
+    height: 2.15em;
+    margin: auto;
+    display: flex;
+    padding-top: 2.75em;
+    justify-content: space-between;
+}
+
+header nav div{
+    height: 100%;
+    display: flex;
+    gap: 2.6em;
+    align-items: center;
+
+}
+
+header nav div.menu-plus img{    
+    width: 1.5em;
+    height: 1.4em;
+    align-items: top;
+}
+
+header nav div.menu-plus span{
+    color: var(--cor4);
+    font-weight: 500;
+    font-size: .8em;
+    line-height: 1em;
+}
+
+header div.descricao-promo{
+    margin-top: 8.12em;
+    margin-left: 40.12em;
+    color: var(--cor4);
+    max-width: 26.24em ;
+    text-align: end;
+
+}
+
+header div.descricao-promo h1{
+    font-weight: 900;
+    font-size: 2.87em;
+
+}
+
+header div.descricao-promo span{
+    font-weight: 500;
+    font-size: 4.87em;
+    color: var(--cor2);
+
+}
+
+header div.descricao-promo span::after{
+    content: ',99';
+    font-size: 0.3em;
+    color: var(--cor2);
+    vertical-align: super;
+
+}
+
+header div.descricao-promo p{
+    font-weight: 400;
+    font-size: 1em;
+
+}
+
+
+
+
