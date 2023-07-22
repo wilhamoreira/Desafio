@@ -14,20 +14,28 @@
 body{
     
     font-family: 'Roboto', sans-serif;
-    width: 100vw;   
+    max-width: 120em;
+    margin: auto;
+
     
 }
+
 header{
     
     background-image: url("../img/principal.png");
-    height: 80vh;
+    height: 100vh;
     /* Define o tamanho e posicionamento da imagem */
     background-size: cover;
-    background-position: center;
+    background-position: center;   
+
 }
 
-nav{
-    position: relative;
+section{
+    margin: auto;
+    max-width: 74.31em;
+}
+
+header section nav{
     max-width: 74.12em;
     height: 2.15em;
     margin: auto;
@@ -36,7 +44,7 @@ nav{
     justify-content: space-between;
 }
 
-header nav div{
+header  section nav div{
     height: 100%;
     display: flex;
     gap: 2.6em;
@@ -44,42 +52,44 @@ header nav div{
 
 }
 
-header nav div.menu-plus img{    
+header section nav div.menu-plus img{    
     width: 1.5em;
     height: 1.4em;
     align-items: top;
 }
 
-header nav div.menu-plus span{
+header section nav div.menu-plus span{
     color: var(--cor4);
     font-weight: 500;
     font-size: .8em;
     line-height: 1em;
 }
 
-header div.descricao-promo{
+header section  div.descricao-promo{
     margin-top: 8.12em;
-    margin-left: 40.12em;
+    margin-right: 2.5em;
     color: var(--cor4);
     max-width: 26.24em ;
     text-align: end;
+    float: right;
+    
 
 }
 
-header div.descricao-promo h1{
+header section div.descricao-promo h1{
     font-weight: 900;
     font-size: 2.87em;
 
 }
 
-header div.descricao-promo span{
+header section div.descricao-promo span{
     font-weight: 500;
     font-size: 4.87em;
     color: var(--cor2);
 
 }
 
-header div.descricao-promo span::after{
+header section div.descricao-promo span::after{
     content: ',99';
     font-size: 0.3em;
     color: var(--cor2);
@@ -87,11 +97,140 @@ header div.descricao-promo span::after{
 
 }
 
-header div.descricao-promo p{
+header section div.descricao-promo p{
+    max-width: 74.12em;
     font-weight: 400;
     font-size: 1em;
+    line-height: 1.55em;
 
 }
+main{
+    color: var(--cor1);
+    flex-wrap: wrap;
+    max-width: 79.62em;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.25em;
+}
+
+main > img {
+    margin-top: -7em;
+    max-width: 39.18em;
+    max-height: 26.56em;
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 0.5em;
+
+}
+
+main > img:hover{
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.397);
+    transform: translateY(-20px);
+}
+
+main article{
+    width: 100%;
+    align-items: start;
+    
+    
+}
+main article span{  
+    font-weight: 300;
+    font-size: 2.25em;
+    margin-left: 1.37em;
+}
+
+main section.produtos{
+    width: 100%;
+    display: flex;
+    gap: 2.06em;
+
+}
+main  > section.produtos > div{
+    margin: auto;
+    margin-top: 5em;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.397);
+    border-radius: 0.8em;
+    gap: 2.06em;
+    margin-bottom: 10.68em;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+main  > section.produtos > div:hover{
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.397);
+    transform: translateY(-20px);
+}
+
+
+main section.produtos div img{
+    padding: 2.25em 0;
+    max-width: 21,87em;
+    max-height: 22.62em;
+    margin-bottom: 0;
+}
+
+main section.produtos div section.preco div{
+    border-top: 2px solid var(--cor2);
+    background-color: var(--cor3);
+    display: flex;
+    flex-direction: column;
+}
+
+main section.produtos div section.preco div span.nome-jogo{
+    color: var(--cor2);
+    padding-top: 1.5em;
+    font-size: 0.85em;
+    font-weight: 400;
+    padding-left: 2.25em;
+}
+
+main section.produtos div section.preco div span.preco-jogo{
+    color: var(--cor1);
+    padding-top: 1.68em;
+    font-size: 1.12em;
+    font-weight: 900;
+    padding-left: 2.25em;
+}
+
+main section.produtos div section.preco button{
+    background-color: var(--cor2);
+    border: none;
+    color: var(--cor4);
+    font-weight: 900;
+    font-size: 1.12em;
+    margin: 0 3.43em;
+    margin-top: 1.5;
+    max-width: 15em;
+    
+}
+footer{
+    height: 3.12em;
+    color: var(--cor4);
+    display: flex;   
+    height: 3.12em;
+    
+}
+footer div.logo{
+    width:25% ;
+    background-color: var(--cor1);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    
+}
+
+footer div.copy{
+    align-items: center;
+    height: 100%;
+    flex: 1;
+    background-color: var(--cor2);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
 
 
 
