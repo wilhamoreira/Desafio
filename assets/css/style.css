@@ -144,6 +144,7 @@ main article span{
 main section.produtos{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     gap: 2.06em;
 
 }
@@ -189,6 +190,7 @@ main section.produtos div section.preco div span.nome-jogo{
 main section.produtos div section.preco div span.preco-jogo{
     color: var(--cor1);
     padding-top: 1.68em;
+    padding-bottom: 1.5em;
     font-size: 1.12em;
     font-weight: 900;
     padding-left: 2.25em;
@@ -197,12 +199,16 @@ main section.produtos div section.preco div span.preco-jogo{
 main section.produtos div section.preco button{
     background-color: var(--cor2);
     border: none;
+    border-radius: 0.65em;
     color: var(--cor4);
     font-weight: 900;
     font-size: 1.12em;
     margin: 0 3.43em;
-    margin-top: 1.5;
+    
+    margin-bottom: 1.31em;
     max-width: 15em;
+    max-height: 3.25em;
+    padding: 0.93em 2.87em  1.25em;
     
 }
 footer{
